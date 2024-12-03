@@ -1,0 +1,138 @@
+body {
+    background: #ffffff;
+    margin: 0;
+    margin-top: 20px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #555555;
+}
+
+#main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#profile {
+    flex: 1.2;
+    max-width: 250px;
+    text-align: center;
+}
+
+#profile .image.avatar img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#profile h1 {
+    margin: 0;
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1.5;
+}
+
+#profile .header-subtext {
+    font-size: 1.15em;
+    margin: 15px 0 25px;
+}
+
+#profile .social-icons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    font-size: 1.5em;
+    color: #666666; /* Gray color for the icons */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #444444; /* Darker gray on hover */
+}
+
+#aboutme-text {
+    flex: 2.5;
+    line-height: 1.6;
+}
+
+#aboutme-text p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+#publications p {
+    margin-bottom: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 10px auto 40px auto;
+}
+
+section h2 {
+    color: #333333;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+section p {
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.smalltext {
+    font-size: 0.85em;
+}
+
+#email {
+    text-align: center;
+    margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+        padding: 20px 20px; /* Increase padding on left and right */
+        gap: 20px;
+    }
+
+    #profile {
+        max-width: none;
+        margin: 0 auto; /* Center the profile section */
+        text-align: center; /* Ensure the content is centered */
+    }
+
+    #aboutme-text {
+        flex: none;
+    }
+
+    /* Add padding to publications section */
+    #publications {
+        padding-left: 20px;
+        padding-right: 20px; /* Adds padding to the left and right sides of the publications section */
+    }
+}
