@@ -8,7 +8,7 @@ body {
     color: #555555;
 }
 
-#main {
+main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
@@ -114,7 +114,7 @@ a:hover {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    #main {
+    main {
         flex-direction: column;
         padding: 20px 20px; /* Increase padding on left and right */
         gap: 20px;
